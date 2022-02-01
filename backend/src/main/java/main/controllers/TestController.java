@@ -13,6 +13,6 @@ public class TestController {
 
     @GetMapping("words")
     public String getStoryWords(){
-        return "some word";
+        return "some word third changes";
     }
 }
