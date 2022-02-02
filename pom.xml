@@ -20,7 +20,100 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+<!--    <properties>-->
+<!--        <java.version>1.8</java.version>-->
+<!--&lt;!&ndash;        <node.version>v10.15.0</node.version>&ndash;&gt;-->
+<!--&lt;!&ndash;        <node.version>LATEST</node.version>&ndash;&gt;-->
+<!--        <node.version>v12.16.1</node.version>-->
+<!--&lt;!&ndash;        <node.version>${node.version}</node.version>&ndash;&gt;-->
+<!--&lt;!&ndash;        <npm.version>6.14.3</npm.version>&ndash;&gt;-->
+<!--&lt;!&ndash;        <npm.version>LATEST</npm.version>&ndash;&gt;-->
+<!--        <npm.version>6.13.4</npm.version>-->
+<!--&lt;!&ndash;        <npm.version>${npm.version}</npm.version>&ndash;&gt;-->
+<!--    </properties>-->
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--            </plugin>-->
+
+<!--            <plugin>-->
+<!--                <groupId>com.github.eirslett</groupId>-->
+<!--                <artifactId>frontend-maven-plugin</artifactId>-->
+<!--                <version>1.7.6</version>-->
+
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>Install node and npm</id>-->
+<!--                        <goals>-->
+<!--                            <goal>install-node-and-npm</goal>-->
+<!--                        </goals>-->
+<!--                        <phase>generate-resources</phase>-->
+<!--                        <configuration>-->
+<!--                            <nodeVersion>${node.version}</nodeVersion>-->
+<!--&lt;!&ndash;                            <nodeVersion>LATEST</nodeVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <nodeVersion>v12.16.1</nodeVersion>&ndash;&gt;-->
+<!--                            <npmVersion>${npm.version}</npmVersion>-->
+<!--&lt;!&ndash;                            <npmVersion>LATEST</npmVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <npmVersion>6.13.4</npmVersion>&ndash;&gt;-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+
+<!--                    <execution>-->
+<!--                        <id>npm install</id>-->
+<!--                        <goals>-->
+<!--                            <goal>npm</goal>-->
+<!--                        </goals>-->
+<!--                        <phase>generate-resources</phase>-->
+<!--                        <configuration>-->
+<!--                            <arguments>install</arguments>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+
+<!--                    <execution>-->
+<!--                        <id>npm build</id>-->
+<!--                        <goals>-->
+<!--                            <goal>npm</goal>-->
+<!--                        </goals>-->
+<!--                        <phase>generate-resources</phase>-->
+<!--                        <configuration>-->
+<!--                            <arguments>run build</arguments>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <nodeVersion>${node.version}</nodeVersion>-->
+<!--&lt;!&ndash;                    <nodeVersion>LATEST</nodeVersion>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <nodeVersion>v12.16.1</nodeVersion>&ndash;&gt;-->
+<!--                    <workingDirectory>frontend</workingDirectory>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-resources-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>Copy Vue frontend into Spring Boot target static folder</id>-->
+<!--                        <phase>process-resources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>copy-resources</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <outputDirectory>backend/target/classes/static</outputDirectory>-->
+<!--&lt;!&ndash;                            <outputDirectory>target/classes/static</outputDirectory>&ndash;&gt;-->
+<!--                            <resources>-->
+<!--                                <resource>-->
+<!--                                    <directory>frontend/dist</directory>-->
+<!--                                    <filtering>true</filtering>-->
+<!--                                </resource>-->
+<!--                            </resources>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 </project>
